@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mominul Islam — Academic Portfolio</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top bp-navbar" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#">~/<span>mominul-islam</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <button id="themeToggle" aria-label="Toggle dark mode"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <!-- Replace "profile.jpg" below with the path to your own photo -->
+        <div class="hero-photo">
+          <img src="images/photo_2026-08-31_02-13-25.jpg" alt="Mominul Islam" class="hero-photo-img"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="avatar-mark hero-photo-fallback">MI</div>
+        </div>
+        <div class="eyebrow font-mono">Student Record — Rev. 2026</div>
+        <h1>Mominul Islam</h1>
+        <div class="hero-role font-mono">
+          <span id="typedRole">CSE Undergraduate</span><span class="caret"></span>
+        </div>
+
+        <p class="mt-4 text-slate" style="max-width:34rem;">
+          A 3rd-semester Computer Science &amp; Engineering student who enjoys taking problems
+          apart to see how they're built — from data structures to the logic gates underneath them.
+          Currently compiling coursework, side projects, and a growing GitHub history.
+        </p>
+
+        <div class="spec-sheet">
+          <div class="row-item"><span>program</span><span>B.Sc. in Computer Science &amp; Engineering</span></div>
+          <div class="row-item"><span>current_semester</span><span>3rd Semester</span></div>
+          <div class="row-item"><span>institution</span><span>Premier University</span></div>
+          <div class="row-item"><span>status</span><span class="text-accent">actively enrolled</span></div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#projects" class="btn btn-blueprint"><svg class="icon-svg me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> View Projects</a>
+          <a href="#contact" class="btn btn-outline-blueprint"><svg class="icon-svg me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg> Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="pipeline-card">
+          <div class="pipeline-title">
+            <span>Academic Build Pipeline</span>
+            <span>8 stages</span>
+          </div>
+          <div class="bp-pipeline">
+            <div class="bp-node is-done"><span class="dot"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="label">Sem 1</span><span class="status">Passed</span></div>
+            <div class="bp-node is-done"><span class="dot"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span class="label">Sem 2</span><span class="status">Passed</span></div>
+            <div class="bp-node is-active"><span class="dot">03</span><span class="label">Sem 3</span><span class="status">Running</span></div>
+            <div class="bp-node is-queued"><span class="dot">04</span><span class="label">Sem 4</span><span class="status">Queued</span></div>
+            <div class="bp-node is-queued"><span class="dot">05</span><span class="label">Sem 5</span><span class="status">Queued</span></div>
+            <div class="bp-node is-queued"><span class="dot">06</span><span class="label">Sem 6</span><span class="status">Queued</span></div>
+            <div class="bp-node is-queued"><span class="dot">07</span><span class="label">Sem 7</span><span class="status">Queued</span></div>
+            <div class="bp-node is-queued"><span class="dot">08</span><span class="label">Sem 8</span><span class="status">Queued</span></div>
+          </div>
+          <div class="terminal-log">
+            <span class="prompt">$</span> <span id="terminalLine"></span><span class="caret" style="background:#CFE0F5;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 reveal">
+        <div class="section-eyebrow">01 / Profile</div>
+        <h2 class="section-title">About</h2>
+        <p class="text-slate">
+          I'm Mominul Islam, an undergraduate student currently in my third semester of a
+          Computer Science &amp; Engineering degree. My first two semesters were spent building a
+          foundation — structured programming, calculus, and the habit of debugging things at
+          2 a.m. — and this semester is where the coursework starts getting genuinely interesting:
+          data structures, digital logic, and object-oriented design.
+        </p>
+        <p class="text-slate">
+          Outside of class, I like translating what I learn into small working projects rather than
+          leaving it in lecture notes. I'm particularly drawn to the layer where software meets
+          hardware — logic circuits, low-level data structures, and the kind of code you can trace
+          by hand. Long term, I'm aiming toward software engineering, with a growing interest in
+          systems-level work.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" style="background:var(--blueprint-strong);">
+  <div class="container">
+    <div class="section-eyebrow reveal">02 / Record</div>
+    <h2 class="section-title reveal">Education</h2>
+
+    <div class="row g-5">
+      <div class="col-lg-5 reveal">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h6 class="mb-1">Currently: 3rd Semester</h6>
+            <span class="font-mono text-accent" style="font-size:.78rem;">In progress</span>
+            <p class="text-slate mt-2 mb-0" style="font-size:.92rem;">Working through Object Oriented Programming with Java, Internet Programming, Digital Electronics &amp; Pulse Technology, and Coordinate Geometry &amp; Vector Analysis.</p>
+          </div>
+          <div class="timeline-item done">
+            <h6 class="mb-1">B.Sc. in Computer Science &amp; Engineering</h6>
+            <span class="font-mono text-slate" style="font-size:.78rem;">2025 — Present · Semester 1–2 completed</span>
+            <p class="text-slate mt-2 mb-0" style="font-size:.92rem;">Completed introductory programming, calculus, and physics coursework.</p>
+          </div>
+          <div class="timeline-item done">
+            <h6 class="mb-1">Higher Secondary Certificate (Science)</h6>
+            <span class="font-mono text-slate" style="font-size:.78rem;">Chittagong University of Engineering &amp; Technology School and College · GPA 5.00</span>
+            <p class="text-slate mt-2 mb-0" style="font-size:.92rem;">Completed HSC in the Science group.</p>
+          </div>
+          <div class="timeline-item done">
+            <h6 class="mb-1">Secondary School Certificate (Science)</h6>
+            <span class="font-mono text-slate" style="font-size:.78rem;">Chittagong Power Station Secondary School · GPA 5.00</span>
+            <p class="text-slate mt-2 mb-0" style="font-size:.92rem;">Completed SSC in the Science group.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 reveal">
+        <h6 class="font-mono text-slate mb-3" style="font-size:.8rem; text-transform:uppercase; letter-spacing:.08em;">Semester 3 — Course Load</h6>
+        <div class="accordion" id="courseAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1">
+                Object Oriented Programming with Java
+              </button>
+            </h2>
+            <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">Classes, inheritance, polymorphism, interfaces, and exception handling in Java.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">
+                Internet Programming
+              </button>
+            </h2>
+            <div id="c2" class="accordion-collapse collapse" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">Building web interfaces and services with HTML, CSS, JavaScript, and REST APIs.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">
+                Digital Electronics &amp; Pulse Technology
+              </button>
+            </h2>
+            <div id="c3" class="accordion-collapse collapse" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">Combinational &amp; sequential circuits, pulse and switching circuits, and timing analysis.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4">
+                Coordinate Geometry &amp; Vector Analysis
+              </button>
+            </h2>
+            <div id="c4" class="accordion-collapse collapse" data-bs-parent="#courseAccordion">
+              <div class="accordion-body">Analytic geometry, vector algebra, and their applications to engineering problems.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="container">
+    <div class="section-eyebrow reveal">03 / Build Log</div>
+    <h2 class="section-title reveal">Skills</h2>
+
+    <div class="row g-5">
+      <div class="col-md-4 reveal">
+        <h6 class="font-mono text-slate mb-3" style="font-size:.78rem; text-transform:uppercase;">Languages</h6>
+
+        <div class="skill-block">
+          <div class="top-row"><span>C</span><span>75%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="75"></div></div>
+        </div>
+        <div class="skill-block">
+          <div class="top-row"><span>C++</span><span>65%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="65"></div></div>
+        </div>
+        <div class="skill-block">
+          <div class="top-row"><span>Java</span><span>55%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="55"></div></div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal">
+        <h6 class="font-mono text-slate mb-3" style="font-size:.78rem; text-transform:uppercase;">Tools &amp; Tech</h6>
+
+        <div class="skill-block">
+          <div class="top-row"><span>Git &amp; GitHub</span><span>65%</span></div>
+          <div class="progress"><div class="progress-bar accent" data-width="65"></div></div>
+        </div>
+        <div class="skill-block">
+          <div class="top-row"><span>VS Code</span><span>80%</span></div>
+          <div class="progress"><div class="progress-bar accent" data-width="80"></div></div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal">
+        <h6 class="font-mono text-slate mb-3" style="font-size:.78rem; text-transform:uppercase;">Currently Building</h6>
+        <ul class="list-unstyled font-mono" style="font-size:.85rem;">
+          <li class="mb-2"><svg class="icon-svg text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> Data Structures &amp; Algorithms</li>
+          <li class="mb-2"><svg class="icon-svg text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> Web Development (HTML/CSS/JS)</li>
+          <li class="mb-2"><svg class="icon-svg text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg> Digital Logic Design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" style="background:var(--blueprint-strong);">
+  <div class="container">
+    <div class="section-eyebrow reveal">04 / Output</div>
+    <h2 class="section-title reveal">Projects</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4 reveal">
+        <div class="project-card p-4">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <svg class="icon-svg fs-3 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+            <span class="project-status status-done">Completed</span>
+          </div>
+          <h5>Login Page</h5>
+          <p class="text-slate" style="font-size:.9rem;">A clean, responsive login page with client-side form validation, focus states, and error handling.</p>
+          <div class="mt-2 mb-3">
+            <span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="https://github.com/Mominulworks/LoginPageee" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-blueprint"><svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg> Code</a>
+            <button class="btn btn-sm btn-blueprint" data-bs-toggle="modal" data-bs-target="#projModal1">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal">
+        <div class="project-card p-4">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <svg class="icon-svg fs-3 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+            <span class="project-status status-done">Completed</span>
+          </div>
+          <h5>Academic Portfolio</h5>
+          <p class="text-slate" style="font-size:.9rem;">This very site — a Bootstrap-based academic portfolio built to track and present coursework, skills, and projects as they grow each semester.</p>
+          <div class="mt-2 mb-3">
+            <span class="project-tag">HTML</span><span class="project-tag">Bootstrap</span><span class="project-tag">JavaScript</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-outline-blueprint"><svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg> Code</a>
+            <button class="btn btn-sm btn-blueprint" data-bs-toggle="modal" data-bs-target="#projModal2">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal">
+        <div class="project-card p-4">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <svg class="icon-svg fs-3 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 2v6a2 2 0 0 1-4 0V2"/><path d="M12 12v10"/><path d="M19 2v20"/><path d="M5 2v20"/></svg>
+            <span class="project-status status-progress">In Progress</span>
+          </div>
+          <h5>Restaurant Order Management System</h5>
+          <p class="text-slate" style="font-size:.9rem;">A system for managing food menus, table orders, billing calculations, and order statuses with file storage.</p>
+          <div class="mt-2 mb-3">
+            <span class="project-tag">C</span><span class="project-tag">File Handling</span><span class="project-tag">Data Structures</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-outline-blueprint"><svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg> Code</a>
+            <button class="btn btn-sm btn-blueprint" data-bs-toggle="modal" data-bs-target="#projModal3">Details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project modals -->
+<div class="modal fade" id="projModal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:var(--paper); color:var(--ink);">
+      <div class="modal-header" style="border-color:var(--line);">
+        <h5 class="modal-title font-display">Login Page</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-slate">
+        <p>A front-end focused project built to practice clean UI design and client-side form handling.</p>
+        <ul>
+          <li>Responsive layout that works across screen sizes</li>
+          <li>Client-side validation with inline error messages</li>
+          <li>Built with plain HTML, CSS, and JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="projModal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:var(--paper); color:var(--ink);">
+      <div class="modal-header" style="border-color:var(--line);">
+        <h5 class="modal-title font-display">Academic Portfolio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-slate">
+        <p>A single-file portfolio built with Bootstrap and vanilla JavaScript, designed to be updated each semester as coursework and projects change.</p>
+        <ul>
+          <li>Responsive layout with a light/dark toggle</li>
+          <li>Scroll-triggered skill bars and section reveals</li>
+          <li>A working contact form with client-side validation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="projModal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:var(--paper); color:var(--ink);">
+      <div class="modal-header" style="border-color:var(--line);">
+        <h5 class="modal-title font-display">Restaurant Order Management System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-slate">
+        <p>A console-based project built in C to apply structured programming and file handling to a real workflow: managing restaurant menu items, order processing, and billing.</p>
+        <ul>
+          <li>Add, edit, and view menu items and prices</li>
+          <li>Take customer orders and generate itemized bills</li>
+          <li>Persist order history and sales reports to file storage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section id="achievements">
+  <div class="container">
+    <div class="section-eyebrow reveal">05 / Log</div>
+    <h2 class="section-title reveal">Achievements &amp; Activities</h2>
+
+    <div class="row g-3">
+      <div class="col-md-6 reveal">
+        <div class="list-group-item d-flex align-items-center gap-3 rounded-3 p-3">
+          <div class="achv-icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
+          <div>
+            <h6 class="mb-0">7th Gateway Intra Debate Tournament</h6>
+            <span class="text-slate" style="font-size:.85rem;">Runners-up</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="list-group-item d-flex align-items-center gap-3 rounded-3 p-3">
+          <div class="achv-icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M5 4H3a2 2 0 0 0 0 4h2M19 4h2a2 2 0 0 1 0 4h-2"/></svg></div>
+          <div>
+            <h6 class="mb-0">ICPC Preli 2025</h6>
+            <span class="text-slate" style="font-size:.85rem;">Participant, 2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="list-group-item d-flex align-items-center gap-3 rounded-3 p-3">
+          <div class="achv-icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="3" opacity=".6"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" opacity=".6"/></svg></div>
+          <div>
+            <h6 class="mb-0">Premier University Computer Club</h6>
+            <span class="text-slate" style="font-size:.85rem;">Active Member</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="list-group-item d-flex align-items-center gap-3 rounded-3 p-3">
+          <div class="achv-icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M5 12.5V17c0 1.66 3.13 3 7 3s7-1.34 7-3v-4.5"/></svg></div>
+          <div>
+            <h6 class="mb-0">CSE Fundamentals with Phitron</h6>
+            <span class="text-slate" style="font-size:.85rem;">Self-paced, completed online</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="background:var(--blueprint-strong);">
+  <div class="container">
+    <div class="section-eyebrow reveal">06 / Reach Out</div>
+    <h2 class="section-title reveal">Contact</h2>
+
+    <div class="row g-5">
+      <div class="col-lg-5 reveal">
+        <p class="text-slate">Open to internships, small collaborations, or just a conversation about coursework and projects. The form sends nothing anywhere yet — wire it up to a backend or a service like Formspree when you're ready to go live.</p>
+        <div class="fact-row"><span>Email</span><span>mi3131544@gmail.com</span></div>
+        <div class="fact-row"><span>Phone</span><span>+8801715926164</span></div>
+        <div class="fact-row"><span>Location</span><span>Chattogram, Bangladesh</span></div>
+        <div class="d-flex gap-2 mt-4">
+          <a href="https://github.com/Mominulworks" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub"><svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+          <a href="https://www.linkedin.com/in/mominul-islam-75b841421?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn"><svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a href="mailto:mi3131544@gmail.com" class="social-chip" aria-label="Email"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+          <a href="https://www.facebook.com/share/1HzcScC83S/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Facebook"><svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 12a10 10 0 1 0-11.5 9.95v-7.04H7.9V12h2.6V9.8c0-2.57 1.53-4 3.87-4 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.62V12h2.86l-.46 2.91h-2.4v7.04A10 10 0 0 0 22 12z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="col-lg-7 reveal">
+        <div class="contact-card">
+          <form id="contactForm" novalidate>
+            <div id="formAlert"></div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" id="cName" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="cEmail" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" id="cMessage" rows="4" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-blueprint"><svg class="icon-svg me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+    <span>© 2026 Mominul Islam — built with Bootstrap &amp; vanilla JS.</span>
+    <span>status: <span class="text-accent">semester_03_running</span></span>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
